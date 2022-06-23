@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Card</title>
+    <style>
+        *{
+            font-family:sans-serif;
+            /*does not match the fornt on the example*/
+        }
+        #body{
+        display: flex;
+        justify-content: center;
+        }
+        #profile{
+        width: 600px;
+        background-color: whitesmoke;
+        position: sticky;
+        }
+        .bbar{
+        height:80px;
+        margin: 0px 0px 20px 0px;
+        background-color: #14a2b8;
+        display: flex;
+        }
+        .icon{
+        position: absolute;
+        left: 50px;
+        top: 55px;
+        height: 50px;
+        width: 50px;
+        }
+        .circle{
+        position: absolute;
+        left: 47.5px;
+        top: 52.5px;
+        height: 55px;
+        width: 55px;
+        background-color: white;
+        border-radius: 50%;
+        }
+        .info{
+        position:relative;
+        left: 20px;margin-bottom: 0px;
+        }
+        .location{
+        height: 15px;
+        width: 10px;
+        margin-right: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        }
+        .gear{
+        height: 15px;
+        width: 15px;
+        margin-right: 20px;
+        margin-top: 0px;
+        }
+    </style>
+</head>
+<body id="body">
+    <div id="profile">
+        <div class="bbar"></div>
+        <div class="circle"></div>
+        <img class="icon" src="/Users/jessegreenough/Documents/Coding-Dojo/Web_Dev_Wk1/icons/user-circle.jpg" alt="icon">
+        <div class="info">
+            <h1 style="margin-top:0px; margin-bottom:0px;">Jane Doe</h1>
+            <h3><img class="location" src="/Users/jessegreenough/Documents/Coding-Dojo/Web_Dev_Wk1/icons/map-marker.jpg" alt="location-icon">Seattle</h3>
+            <pre>Developer | Engineer | Problem Solver
+Master of shadows and the Internet!
+            </pre>
+            <h4><img class="gear" src="/Users/jessegreenough/Documents/Coding-Dojo/Web_Dev_Wk1/icons/gear.jpg" alt="location-icon"><a href="Web_Dev_Wk1/icons/user-circle.png">edit profile</a></h4>
+        </div>
+    </div>
+</body>
+</html>
