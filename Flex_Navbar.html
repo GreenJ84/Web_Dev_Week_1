@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Flex Navbar</title>
+    <style>
+        *{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .nav{
+            display: flex;            ;
+            margin: 5px 10px;
+            background-color: #2a2a2a;           
+            box-shadow: 1px .5px 1px .1px white, -1px -.5px 1px .1px white;
+            /* Only thing that I am missing is being able to rotate the shadows under the bloack to have uneven edges*/
+        }
+        .nav-title{
+        margin: auto auto auto 20px;
+        vertical-align: baseline;
+        color: white;
+        }
+        .nav-links{
+            display: flex;
+            justify-content: flex-end;
+            color: white;
+            list-style-type: none;
+        }
+        .active{
+            font-weight: bolder;
+        }
+        li{
+            margin: 1pc;
+            color: white;
+            font-size: smaller;
+        }
+        .btn{
+            color: white;
+            background-color: #14a2b8;
+            border: 2px groove black;
+            box-shadow: 2px 2px black;
+        }
+        a:link{
+        color: white;
+        text-decoration: none;
+        }
+        a:hover{
+        color: aquamarine;
+        }
+        a:visited{
+            color: violet;
+        }
+    </style>
+</head>
+<body style="background-color:#2a2a2a">
+    <div class="nav">
+        <h1 class="nav-title">Profile</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">My Profile</a></li>
+            <li><a href="#">Find Connections</a></li>
+            <li><button class="btn">Sign Out</button></li>
+        </ul>
+    </div>    
+</body>
+</html>
