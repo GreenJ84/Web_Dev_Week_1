@@ -1,0 +1,7 @@
+.blankSides{
+    flex: 3;
+}
+.display{
+    flex: 8;
+    background-color: aqua;
+}
