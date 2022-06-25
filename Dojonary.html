@@ -8,40 +8,78 @@
     <title>Dojonary</title>
 </head>
 <!--set to display flex, column directions-->
-<body style="display:flex; flex-direction:column">
+<body class="body">
     <!--Side white bar-->
     <div class="blankSides"></div>
     <!--Website Display Column-->
     <div class="display">
         <!--Nav Bar flex  align center-->
-        <div>
+        <div class="navBar">
             <!--Title-->
+            <h1 class="navTitle">Dojonary</h1>
             <!--Search Bar-->
+            <div class="search">
+                Search
+            </div>
             <!--Login Button-->
+            <button class="login" type="button" value="Log In">Log In</button>
         </div>
         <!--Info Content; flex columns-->
-        <div>
+        <div class="content">
             <!--Defenitions column-->
-            <div>
+            <div class="mainContent">
                 <!--Defenition 1-->
-                <div>
+                <div class="definitionBox">
                     <!--Pronunciation-->
-                    <div>
-                        <h1>ninja</h1>
-                        <p>noun</p>
-                        <p>Plural</p>
+                    <div class="details">
+                        <h1 style="margin: 25px 0px 5px 0px">ninja</h1>
+                        <p style="margin: 0px 0px 5px 0px"><em>noun</em></p>
+                        <p style="margin: 0px 0px 20px 0px">Plural: ninjas</p>
+                        <button class="likes" type="button" value="likes">13 Likes</button>
                     </div>
                     <!--Definition-->
+                    <div class="definition">
+                        <div>A practiontioner skilled in the <a class="textLink" href="">Japanese</a> art of <a class="textLink" style="margin: 0px 0px 0px 6px" href="">ninjustu</a>.</div>
+                    </div>
                 </div>
                 <!--Defenition 2-->
-                <div></div>
+                <div class="definitionBox">
+                    <!--Pronunciation-->
+                    <div class="details">
+                        <h1 style="margin: 25px 0px 5px 0px">ninja</h1>
+                        <p style="margin: 0px 0px 5px 0px"><em>noun</em></p>
+                        <p style="margin: 0px 0px 20px 0px">Plural: ninjas</p>
+                        <button class="likes" type="button" value="likes">37 Likes</button>
+                    </div>
+                    <!--Definition-->
+                    <div class="definition">
+                        <div>A <a class="textLink" href="">programmer</a> who breaks down problems with <a class="textLink" style="margin: 0px 0px 0px 6px;" href=""> Zen</a>-like focus</div>
+                    </div>
+                </div>
             </div>
             <!--Extras column-->
-            <div>
+            <div class="sideContent">
                 <!--Add Definition-->
-                <div></div>
+                <div class="addDefinition">
+                    <p style="padding-left: 15px;">Dojonary is defined by <strong>YOU</strong></p>
+                    <button class="addButton">Add Definition</button>
+                </div>
                 <!--Advertizement-->
-                <div></div>
+                <div class="advertizement">
+                    <div class="ad">
+                        <img src="" alt="CD">
+
+                        <p>Get your hair looking better than ever.</p>
+                    </div>
+                    <div class="ad">
+                        <img src="" alt="CD">
+                        <p>Boost your weightloss with our product!!</p>
+                    </div>
+                    <div class="ad">
+                        <img src="" alt="CD">
+                        <p>Get invetment advise from the best of the best!</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

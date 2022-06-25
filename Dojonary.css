@@ -1,7 +1,131 @@
-.blankSides{
-    flex: 3;
+.body{
+    display: flex;
 }
-.display{
-    flex: 8;
-    background-color: aqua;
+    .blankSides{
+        width: 10%;
+
+    }
+    .display{
+        width: 80%;
+    }
+        .navBar{
+            background-color: #cccccc;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 40px 0px 20px;
+        }
+            .navTitle{
+
+            }
+            .search{
+                padding: 0px 5px;
+                width: 40%;
+                background-color: #ffffff;
+                color: #9c9c9c;
+                position: relative;
+                right: 50px;
+                border: 2.5px groove black;
+            }
+            .login{
+                background-color: #2b77e4;
+                color: #f4f8fd;
+                border: 2.5px groove black;
+                box-shadow: 2px 2px black;
+                width: 10%;
+                height: 30px;
+            }
+        .content{
+            display: flex;
+        }
+            .mainContent{
+                padding: 20px;
+                font-size: larger;
+                width:70%;
+                height: 800px
+            }
+                .definitionBox{
+                    display: flex;
+                    border: 2px solid black;
+                    height: 50%;
+                    margin-bottom: 20px;
+                    overflow: scroll;
+                }
+                    .details{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        flex: 4;
+                        padding: 60px 0px 0px 0px;
+                        position: relative;
+                        overflow: scroll;
+                        
+                        }
+                            .likes{
+                                position: absolute;
+                                bottom: 60px;
+                                background-color: #ffd866;
+                                border: 2px solid black;
+                                box-shadow: 2px 2px black;
+                                overflow: scroll;
+                                height: 10%;
+                                width: 50%;
+                            }
+                    .definition{
+                        display: flex;
+                        align-items: center;
+                        align-content: space-around;
+                        justify-content: flex-start;
+                        padding: 40px;
+                        flex-wrap: wrap;
+                        font-size: larger;
+                        flex: 8;
+                        overflow: scroll;
+                        
+                    }
+        /*sideContent*/
+        .sideContent{
+            padding: 20px;
+            height: 800px;
+            width: 30%;
+        }
+            .addDefinition{
+                padding: 10px;
+                border: 2px solid black;
+                margin-bottom: 20px;
+                font-size: 40px;
+                height: 30%;
+                overflow: scroll;
+                display: flex;
+                flex-direction: column;
+            }
+                .addButton{
+                    background-color: #92c47c;
+                    border: 2px solid black;
+                    box-shadow: 2px 2px black;
+                    width: 90%;
+                    align-self: center;
+                    justify-self: center;
+                    height: 40px;
+                }
+            .advertizement{
+                border: 2px solid black;
+                padding: 0px 5px 0px 5px;
+                height: 70%;
+                overflow: scroll;
+
+            }
+                .ad{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    border: 2px dotted lightblue;
+                    margin: 2px 0px 2px 0px;
+                    padding: 0px 0px 0px 10px;
+                }
+.textLink{
+    margin: 0px 4px;
+}
+a:visited{
+    color: blue;
 }
