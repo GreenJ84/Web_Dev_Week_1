@@ -15,31 +15,36 @@
             justify-content: space-between;
             padding: 0px 40px 0px 20px;
         }
-            .navTitle{
-
-            }
+            /*.navTitle{
+                font-size: 2.5vw;
+            }*/
             .search{
-                padding: 0px 5px;
+                padding: 0px 0px 0px 10px;
                 width: 40%;
+                height: 30px;
                 background-color: #ffffff;
                 color: #9c9c9c;
                 position: relative;
                 right: 50px;
                 border: 2.5px groove black;
+                display: flex;
+                align-items: center;
+                font-size: 1.5vw;
             }
             .login{
                 background-color: #2b77e4;
                 color: #f4f8fd;
                 border: 2.5px groove black;
-                box-shadow: 2px 2px black;
+                box-shadow: 3px 3px black;
                 width: 10%;
-                height: 30px;
+                height: 40px;
+                font-size: 120%;
             }
         .content{
             display: flex;
         }
             .mainContent{
-                padding: 20px;
+                padding: 20px 10px 20px 0px;
                 font-size: larger;
                 width:70%;
                 height: 800px
@@ -56,20 +61,21 @@
                         flex-direction: column;
                         align-items: center;
                         flex: 4;
-                        padding: 60px 0px 0px 0px;
+                        padding: 30px 0px 0px 0px;
                         position: relative;
                         overflow: scroll;
-                        
+                        width: 80%;
                         }
                             .likes{
                                 position: absolute;
-                                bottom: 60px;
+                                bottom: 40px;
                                 background-color: #ffd866;
                                 border: 2px solid black;
-                                box-shadow: 2px 2px black;
+                                box-shadow: 3px 3px black;
                                 overflow: scroll;
-                                height: 10%;
-                                width: 50%;
+                                height: 15%;
+                                width: 70%;
+                                font-size: 20px;
                             }
                     .definition{
                         display: flex;
@@ -78,51 +84,72 @@
                         justify-content: flex-start;
                         padding: 40px;
                         flex-wrap: wrap;
-                        font-size: larger;
+                        font-size: 30px;
                         flex: 8;
                         overflow: scroll;
                         
                     }
         /*sideContent*/
         .sideContent{
-            padding: 20px;
+            padding: 20px 0px 20px 10px;
             height: 800px;
             width: 30%;
         }
             .addDefinition{
-                padding: 10px;
+                padding: 0px 10px 10px 10px;
                 border: 2px solid black;
-                margin-bottom: 20px;
+                margin:0px 0px 20px 0px;
                 font-size: 40px;
-                height: 30%;
-                overflow: scroll;
+                height: 40%;
                 display: flex;
                 flex-direction: column;
+                font-size: 50px;
             }
                 .addButton{
                     background-color: #92c47c;
                     border: 2px solid black;
-                    box-shadow: 2px 2px black;
-                    width: 90%;
+                    box-shadow: 3px 3px black;
+                    width: 95%;
                     align-self: center;
-                    justify-self: center;
-                    height: 40px;
+                    justify-self: flex-end;
+                    height: 25%;
+                    font-size: 30px;
+                    padding: 10px 0px;
                 }
             .advertizement{
-                border: 2px solid black;
-                padding: 0px 5px 0px 5px;
+                display: grid;
+                grid-template-rows:repeat(5, 20%);
+                padding: 5px;
+                row-gap: 5px;
                 height: 70%;
-                overflow: scroll;
-
             }
-                .ad{
+                .adBorder{
+                    padding: 0px;
+                    box-shadow:1px 1px 1px 1px black;
+                }
+                #ad1, #ad2, #ad3{
+                    border: 1px solid blueviolet;
+                    margin: 0px;
+                    height: 100%;
+                    padding-left: 120px;
                     display: flex;
                     align-items: center;
-                    justify-content: flex-start;
-                    border: 2px dotted lightblue;
-                    margin: 2px 0px 2px 0px;
-                    padding: 0px 0px 0px 10px;
+                    background-color: lightgray;
+                    position: relative;
                 }
+                    .adLink{
+                        text-decoration: none;
+                    }
+                    .image{
+                        height: 100%;
+                        width: 100px;
+                        position: absolute;
+                        left: 0px;
+                    }
+                    #adText1, #adText2, #adText3{
+                        font-size: 20px;
+                        padding: 0px 0px 0px 15px;
+                    }
 .textLink{
     margin: 0px 4px;
 }
