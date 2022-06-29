@@ -21,6 +21,7 @@ const box1 = document.getElementById('ad1');
 // 👇️ Change text color on mouseover
 box1.addEventListener('mouseover', function handleMouseOver() {
   box1.style.color = 'blue';
+  box1.color.style.background='green'
 });
 
 // 👇️ Change text color back on mouseout
